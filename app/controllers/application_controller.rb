@@ -11,7 +11,7 @@ class App < Sinatra::Base
     post '/teams' do
 
       @team = params[:team]
-      raise @team.inspect
+      # raise @team.inspect
       erb :team
     end
 
