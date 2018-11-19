@@ -1,4 +1,5 @@
 require 'sinatra/base'
+# require-relative '../../config/environment'
 
 class App < Sinatra::Base
 
@@ -9,9 +10,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-
-      @team = params[:team]
-      raise @team.inspect
+      @team = Team.new(params[:team])
       erb :team
     end
 
