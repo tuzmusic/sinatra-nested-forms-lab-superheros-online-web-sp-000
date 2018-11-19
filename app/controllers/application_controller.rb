@@ -1,5 +1,6 @@
 require 'sinatra/base'
-require-relative '../../config/environment'
+# require-relative '../../config/environment'
+require-relative '../models/team'
 
 class App < Sinatra::Base
 
