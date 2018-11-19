@@ -1,5 +1,5 @@
 require 'sinatra/base'
-
+require-relative '../../config/environment.rb'
 class App < Sinatra::Base
 
     set :views, Proc.new { File.join(root, "../views/") }
