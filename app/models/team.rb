@@ -1,6 +1,6 @@
 class Team
 
-  attr_accessor :name, :power, :bio
+  attr_accessor :name, :motto, :members
 
   def initialize(hash)
     hash.each do |key, value|
